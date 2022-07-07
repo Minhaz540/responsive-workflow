@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    position: sticky;
+    top: 0;
+}
+header nav {
+    padding: 10px;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(220, 220, 245);
+    border-bottom: 1px solid rgb(173, 173, 173);
+}
+.namingPart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.namingPart img {
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.namingPart span {
+    font-weight: bold;
+    font-size: 20px;
+}
+.authentication {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.authentication button {
+    width: 100px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    box-shadow: none;
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 7px 12px;
+}
+.container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 5px;
+    grid-auto-flow: dense;
+}
+.container div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.container .small {
+    grid-row: auto / span 1;
+    grid-column: auto / span 1;
+}
+.container .medium {
+    grid-column: auto / span 2;
+    grid-column: auto / span 2;
+}
+.container .big {
+    grid-row: auto / span 3;
+    grid-column: auto / span 3;
+}

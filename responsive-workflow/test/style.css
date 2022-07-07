@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+.container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.container div:nth-child(n) {
+    background-color: rgb(145, 255, 0);
+}
+.container div:nth-child(2n) {
+    background-color: rgb(0, 89, 255);
+}
